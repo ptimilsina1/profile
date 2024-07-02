@@ -1,4 +1,5 @@
 # Data Scientist | Data Engineer
+**LinkedIn:** [https://www.linkedin.com/in/ptimilsina/](https://www.linkedin.com/in/ptimilsina/)  **Email:** [ptimilsina.data@gmail.com](mailto:ptimilsina.data@gmail.com)
 *Experienced Data Scientist, and Data Engineer with a strong background in Data Analysis, ETL processes, Machine Learning, and Deep Learning. Proven expertise in developing and executing advanced data solutions across various industries, including higher education and government sectors. Skilled in Python, SQL, and a variety of data visualization tools such as Power BI. Adept at implementing architectural frameworks and automating workflows using tools like Apache Airflow. Demonstrated ability to design and deploy scalable data pipelines, integrate diverse data sources, and create actionable insights through comprehensive dashboards. Proficient in cloud computing platforms (AWS, Azure), and experienced in NLP techniques, statistical modeling, and network analysis. Extensive knowledge in leveraging large language models, including LangChain, RAG (Retrieval-Augmented Generation), zero-shot learning, few-shot learning, and prompt engineering. Excellent communicator and collaborator, with a track record of effectively supervising and mentoring junior team members to achieve project goals.*
 
 ## Technical Skills
@@ -42,9 +43,7 @@ _May 2012 to Dec. 2015_
 - M.Sc. Physics( Electronics Minor) | St. Joseph's College, Trichy, India (_May 2010_)
 - B.Sc. Physics  (Computer Sc. & Math Minor) | St. Xavier's College, Kathmandu, Nepal (_May 2008_)
 
-## Contacts
-**LinkedIn:** [https://www.linkedin.com/in/ptimilsina/](https://www.linkedin.com/in/ptimilsina/) <br>
-**Email:** [ptimilsina.data@gmail.com](mailto:ptimilsina.data@gmail.com)
+
 
 
 
