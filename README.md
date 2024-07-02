@@ -43,11 +43,8 @@ _May 2012 to Dec. 2015_
 - B.Sc. Physics  (Computer Sc. & Math Minor) | St. Xavier's College, Kathmandu, Nepal (_May 2008_)
 
 ## Contacts
-LinkedIn: [https://www.linkedin.com/in/ptimilsina/](https://www.linkedin.com/in/ptimilsina/) \n
-Email: [ptimilsina.data@gmail.com](ptimilsina.data@gmail.com)
-
-
-   
+**LinkedIn:** [https://www.linkedin.com/in/ptimilsina/](https://www.linkedin.com/in/ptimilsina/) <br>
+**Email:** [ptimilsina.data@gmail.com](ptimilsina.data@gmail.com)
 
 
 
