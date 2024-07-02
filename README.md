@@ -44,7 +44,7 @@ _May 2012 to Dec. 2015_
 
 ## Contacts
 **LinkedIn:** [https://www.linkedin.com/in/ptimilsina/](https://www.linkedin.com/in/ptimilsina/) <br>
-**Email:** [ptimilsina.data@gmail.com](ptimilsina.data@gmail.com)
+**Email:** [ptimilsina.data@gmail.com](mailto:ptimilsina.data@gmail.com)
 
 
 
