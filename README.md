@@ -47,7 +47,7 @@ _May 2012 to Dec. 2015_
 ## Education
 - MS in Business Intelligence and Analytics | Rockhurst University, Kansas City, MO 				
 - MS Physics (Atomic Molecular Optics)	| Kansas State University, Manhattan, KS 	
-- B.Sc. Physics  (Computer Sc. & Math Minor) | St. Xavier's College, Kathmandu, Nepal 
+- BS  Physics, Computer Science, Math & Bio-statistics | St. Xavier's College, Kathmandu, Nepal 
 
 ## Contacts
 **LinkedIn:** [https://www.linkedin.com/in/ptimilsina/](https://www.linkedin.com/in/ptimilsina/)<br>
