@@ -7,12 +7,12 @@
 - Data Science | Statistical Inference, Bayesian Methods, A/B Testing, Time Series
 - Deep Learning | Reinforcement Learning, NLP, Neural Network, Transformer, Model Optimization and Hyperparameter Tuning, GPU Programming, Distributed Computing
 - Machine Learning | Supervised and Unsupervised, Regression and Classification, Clustering, PCA, Ensemble Methods
-- Large Language Model | LangChain , Langsmith, Retrieval-Augmented Generation (RAG), Zero-shot Learning, Few-shot Learning, Prompt Engineering, vector database
+- Large Language Model | LangChain , Langsmith, Retrieval-Augmented Generation (RAG), Zero-shot Learning, chain-agents, Few-shot Learning, Prompt Engineering, vector database
 - Tools | VS-Code, Dash, Git, Airflow, dbt, Linux, Tableau, PowerBI, Google Analytics, R-Markdown, zeppelin, jupyter-notebook, docker, Talend
 - Big Data | Hadoop, Hive, Sqoop, Flume, Oozie, Spark, HBase
 - Database | Microsoft SQL, MySQL, Postgres, Oracle, MongoDB, SnowFlake
 - AWS Cloud | VPC, EC2, S3, Lambda, Cloudformation, Cloudwatch, SES, Glue, Athena, RDS,Redshift, Beanstalk, EMR, Sagemaker, Comprehend, Data migration, Kinesis, Stepfunction, MWAA
-- Azure Cloud | Virtual Machines,Azure Storage, Azure SQL Database, Azure Databricks, Azure Data Factory, Azure Synapse
+- Azure Cloud | Virtual Machines,Azure Storage, Azure SQL Database, Azure Databricks, Azure Data Factory, Azure Synapse, Azure ML, Azure AI
 - Communication | Able to convey a technical message to non-technical colleagues
 
 ## Certifications
@@ -45,10 +45,9 @@ _May 2012 to Dec. 2015_
 
 
 ## Education
-- MS in Business Intelligence and Analytics | Rockhurst University, Kansas City, MO (_May 2018_)					
-- MS Physics (Atomic Molecular Optics)	| Kansas State University, Manhattan, KS (_May 2016_) 			        		
-- M.Sc. Physics( Electronics Minor) | St. Joseph's College, Trichy, India (_May 2010_)
-- B.Sc. Physics  (Computer Sc. & Math Minor) | St. Xavier's College, Kathmandu, Nepal (_May 2008_)
+- MS in Business Intelligence and Analytics | Rockhurst University, Kansas City, MO 				
+- MS Physics (Atomic Molecular Optics)	| Kansas State University, Manhattan, KS 	
+- B.Sc. Physics  (Computer Sc. & Math Minor) | St. Xavier's College, Kathmandu, Nepal 
 
 ## Contacts
 **LinkedIn:** [https://www.linkedin.com/in/ptimilsina/](https://www.linkedin.com/in/ptimilsina/)<br>
