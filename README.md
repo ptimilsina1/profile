@@ -15,6 +15,13 @@
 - Azure Cloud | Virtual Machines,Azure Storage, Azure SQL Database, Azure Databricks, Azure Data Factory, Azure Synapse
 - Communication | Able to convey a technical message to non-technical colleagues
 
+## Certifications
+- Microsoft Certified: Azure Data Scientist Associate [https://learn.microsoft.com/en-us/users/prataptimilsina-0218/credentials/2557138e8c2ec53a]
+- Microsoft Certified: Power BI Data Analyst Associate [https://learn.microsoft.com/en-us/users/prataptimilsina-0218/credentials/35d1269c14ca3920]
+- Microsoft Certified: Azure AI Fundamentals [https://learn.microsoft.com/en-us/users/prataptimilsina-0218/credentials/544376ad51ae3298]
+- Microsoft Certified: Azure Data Fundamentals [https://learn.microsoft.com/en-us/users/prataptimilsina-0218/credentials/a34b35e9dcfc31f9]
+- Astronomer Certification for Apache Airflow Fundamentals [https://www.credly.com/badges/79c2ff29-de12-4ff5-b9f8-0e5f1568bad1/public_url]
+
 ## Work Experience
 **Data Scientist**    
 Middle States Commission on Higher Education (_Philadelphia, PA_)    
