@@ -28,7 +28,7 @@ Middle States Commission on Higher Education (_Philadelphia, PA_)
 _Sept 2023 – Present_    
   
 **Senior Consultant - Data Engineer**    
-Incapsulate LLC (Now Accenture) (_Washington DC_)    
+Incapsulate LLC (Part of Accenture) (_Washington DC_)    
 _Feb 2022 – June 2023_    
   
 **Data Scientist**    
