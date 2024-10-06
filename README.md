@@ -17,6 +17,7 @@
 
 ## Certifications
 - [Microsoft Certified: Azure Data Scientist Associate](https://learn.microsoft.com/en-us/users/prataptimilsina-0218/credentials/2557138e8c2ec53a)
+- [Databricks Certified Data Engineer Associate](https://credentials.databricks.com/2fd2bc26-c5d9-4b4f-878a-1ada3b7b0196)
 - [Microsoft Certified: Power BI Data Analyst Associate](https://learn.microsoft.com/en-us/users/prataptimilsina-0218/credentials/35d1269c14ca3920)
 - [Microsoft Certified: Azure AI Fundamentals](https://learn.microsoft.com/en-us/users/prataptimilsina-0218/credentials/544376ad51ae3298)
 - [Microsoft Certified: Azure Data Fundamentals](https://learn.microsoft.com/en-us/users/prataptimilsina-0218/credentials/a34b35e9dcfc31f9)
