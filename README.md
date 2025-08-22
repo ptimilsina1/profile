@@ -14,14 +14,22 @@ Experienced data professional with expertise in building end-to-end data solutio
 - **Visualization**: Power BI, Tableau, interactive dashboards
 
 ## 🛠️ Technical Toolkit
+
 | Category | Technologies |
 |----------|--------------|
-| **Languages** | Python, PySpark, SQL, R, Shell, Lua |
-| **ML/DL** | TensorFlow, PyTorch, Scikit-learn, Hugging Face |
-| **Big Data** | Spark, Hadoop, Hive, Kafka, Databricks |
-| **Cloud** | AWS (Sagemaker, Glue, EMR), Azure (Databricks, Synapse, ML) |
-| **Tools** | Airflow, dbt, Docker, Git, Power BI, Tableau |
-| **Databases** | SQL Server, PostgreSQL, MongoDB, Snowflake |
+| **Programming** | Python, PySpark, SQL, R, Shell Script, MATLAB, Lua, HTML |
+| **Data Science** | Statistical Inference, Bayesian Methods, A/B Testing, Time Series Analysis |
+| **Deep Learning** | Reinforcement Learning, NLP, Neural Networks, Transformers, Model Optimization, Hyperparameter Tuning, GPU Programming, Distributed Computing |
+| **Machine Learning** | Supervised/Unsupervised Learning, Regression, Classification, Clustering, PCA, Ensemble Methods |
+| **Large Language Models** | LangChain, LangSmith, RAG, Zero-shot Learning, Few-shot Learning, Prompt Engineering, Vector Databases |
+| **Tools & Platforms** | VS Code, Dash, Git, Apache Airflow, dbt, Linux, Docker, Talend, Jupyter, Zeppelin, R-Markdown |
+| **Visualization** | Tableau, Power BI, Google Analytics |
+| **Big Data** | Hadoop, Hive, Sqoop, Flume, Oozie, Spark, HBase |
+| **Databases** | Microsoft SQL, MySQL, PostgreSQL, Oracle, MongoDB, Snowflake |
+| **AWS Cloud** | VPC, EC2, S3, Lambda, CloudFormation, CloudWatch, SES, Glue, Athena, RDS, Redshift, Beanstalk, EMR, SageMaker, Comprehend, Kinesis, Step Functions, MWAA |
+| **Azure Cloud** | Virtual Machines, Azure Storage, Azure SQL Database, Azure Databricks, Azure Data Factory, Azure Synapse, Azure ML, Azure AI |
+| **Salesforce CRM** | SOQL, Salesforce CLI, Workbench, simple-salesforce, Inspector, Reports, Dashboards, Object Manager |
+| **Communication** | Technical translation for non-technical stakeholders |
 
 ## 📚 Certifications
 - [Microsoft Certified: Azure Data Scientist Associate](https://learn.microsoft.com/en-us/users/prataptimilsina-0218/credentials/2557138e8c2ec53a)
