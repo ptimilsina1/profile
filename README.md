@@ -2,7 +2,7 @@
 **Data Scientist & Data Engineer** | [LinkedIn](https://www.linkedin.com/in/ptimilsina/) | [Email](mailto:ptimilsina.data@gmail.com)
 
 ## 🚀 About Me
-Experienced data professional with expertise in building end-to-end data solutions across education, government, and consulting sectors. I specialize in transforming complex data into actionable insights through advanced analytics, ML/DL pipelines, and scalable cloud architectures. Passionate about leveraging large language models and automation to solve real-world problems.
+Experienced data professional with expertise in building end-to-end data solutions across education, government, health and consulting sectors. I specialize in transforming complex data into actionable insights through advanced analytics, ML/DL pipelines, and scalable cloud architectures. Passionate about leveraging large language models and automation to solve real-world problems.
 
 ## 💼 Experience
 - **Data Scientist** @ Middle States Commission on Higher Education  
