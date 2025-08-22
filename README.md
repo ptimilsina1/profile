@@ -24,6 +24,7 @@ Experienced data professional with expertise in building end-to-end data solutio
 - **Visualization**: Power BI, Tableau, interactive dashboards
 
 ## 🛠️ Technical Toolkit
+
 | Category | Technologies |
 |----------|--------------|
 | **Programming** | Python, PySpark, SQL, R, Shell Script, MATLAB, Lua, HTML |
