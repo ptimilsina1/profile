@@ -36,6 +36,8 @@ Experienced data professional with expertise in building end-to-end data solutio
 - [Databricks Certified Data Engineer Associate](https://credentials.databricks.com/2fd2bc26-c5d9-4b4f-878a-1ada3b7b0196)
 - [Microsoft Certified: Power BI Data Analyst Associate](https://learn.microsoft.com/en-us/users/prataptimilsina-0218/credentials/35d1269c14ca3920)
 - [Astronomer Certification for Apache Airflow Fundamentals](https://www.credly.com/badges/79c2ff29-de12-4ff5-b9f8-0e5f1568bad1/public_url)
+- [Microsoft Certified: Azure Data Fundamentals](https://learn.microsoft.com/api/credentials/share/en-us/PratapTimilsina-0218/A34B35E9DCFC31F9?sharingId=C8CD1F0B985D1F8D)
+- [Microsoft Certified: Azure AI Fundamentals](https://learn.microsoft.com/api/credentials/share/en-us/PratapTimilsina-0218/544376AD51AE3298?sharingId=C8CD1F0B985D1F8D)
 
 ## 📊 Featured Projects
 
