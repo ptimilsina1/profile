@@ -4,7 +4,17 @@
 ## 🚀 About Me
 Experienced data professional with expertise in building end-to-end data solutions across education, government, and consulting sectors. I specialize in transforming complex data into actionable insights through advanced analytics, ML/DL pipelines, and scalable cloud architectures. Passionate about leveraging large language models and automation to solve real-world problems.
 
-## 💡 Core Competencies
+## 💼 Experience
+- **Data Scientist** @ Middle States Commission on Higher Education  
+  *Developing analytics frameworks for higher education accreditation*
+  
+- **Senior Consultant - Data Engineer** @ Incapsulate LLC (Accenture)  
+  *Architected cloud-based data solutions and financial costs forecast for government clients, specializing in medical classifiers, predictive modeling, and forecasting systems to enhance healthcare decision-making and operational efficiency for health clients*
+  
+- **Data Scientist** @ Virginia Tech  
+  *Built predictive models for institutional research*
+
+  ## 💡 Core Competencies
 - **Data Engineering**: ETL/ELT pipelines, data warehousing (Snowflake, Redshift), workflow orchestration (Airflow)
 - **Data Science**: Statistical modeling, NLP, time series analysis, A/B testing
 - **Machine Learning**: Supervised/unsupervised learning, ensemble methods, model optimization
@@ -14,7 +24,6 @@ Experienced data professional with expertise in building end-to-end data solutio
 - **Visualization**: Power BI, Tableau, interactive dashboards
 
 ## 🛠️ Technical Toolkit
-
 | Category | Technologies |
 |----------|--------------|
 | **Programming** | Python, PySpark, SQL, R, Shell Script, MATLAB, Lua, HTML |
@@ -40,7 +49,6 @@ Experienced data professional with expertise in building end-to-end data solutio
 - [Microsoft Certified: Azure AI Fundamentals](https://learn.microsoft.com/api/credentials/share/en-us/PratapTimilsina-0218/544376AD51AE3298?sharingId=C8CD1F0B985D1F8D)
 
 ## 📊 Featured Projects
-
 **University Enrollment Prediction Classifier**  
 *Predicts freshmen admission acceptance using ML models with logistic regression baseline and gradient boosting classifier with hyperparameter tuning*  
 `[Python, Scikit-learn, ML, Hyperparameter Tuning]` → [Repo](https://github.com/ptimilsina1/university-enrollment-predictor)
@@ -72,16 +80,6 @@ Experienced data professional with expertise in building end-to-end data solutio
 **Multi-Pdf-Bot**  
 *Streamlit application for chatting with multiple PDF documents using conversational AI*  
 `[Streamlit, NLP, Document Processing, Conversational AI]` → [Repo](https://github.com/ptimilsina1/MultiPdfChat)
-
-## 💼 Experience
-- **Data Scientist** @ Middle States Commission on Higher Education  
-  *Developing analytics frameworks for higher education accreditation*
-  
-- **Senior Consultant - Data Engineer** @ Incapsulate LLC (Accenture)  
-  *Architected cloud-based data solutions and financial costs forecast for government clients, specializing in medical classifiers, predictive modeling, and forecasting systems to enhance healthcare decision-making and operational efficiency for health clients*
-  
-- **Data Scientist** @ Virginia Tech  
-  *Built predictive models for institutional research*
 
 ## 🎓 Education
 - **MS in Business Intelligence & Analytics** - Rockhurst University  
