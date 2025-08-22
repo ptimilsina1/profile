@@ -9,7 +9,7 @@ Experienced data professional with expertise in building end-to-end data solutio
 - **Data Science**: Statistical modeling, NLP, time series analysis, A/B testing
 - **Machine Learning**: Supervised/unsupervised learning, ensemble methods, model optimization
 - **Deep Learning**: Transformers, reinforcement learning, distributed training
-- **LLM Stack**: RAG systems, LangChain, prompt engineering, vector databases
+- **LLM Stack**: RAG systems, LangChain, CrewAI, prompt engineering, vector databases
 - **Cloud Architecture**: AWS & Azure full-stack implementations
 - **Visualization**: Power BI, Tableau, interactive dashboards
 
@@ -30,18 +30,38 @@ Experienced data professional with expertise in building end-to-end data solutio
 - [Astronomer Certification for Apache Airflow Fundamentals](https://www.credly.com/badges/79c2ff29-de12-4ff5-b9f8-0e5f1568bad1/public_url)
 
 ## 📊 Featured Projects
-<!-- Add your key projects here with links to repos -->
-- **Higher Education Analytics Platform**  
-  *Automated data pipeline & ML models for institutional effectiveness*  
-  `[Python, Spark, AWS, Power BI]` → [Repo Link](#)
 
-- **Government Document Intelligence System**  
-  *NLP pipeline with RAG for document processing*  
-  `[LangChain, Azure AI, Transformers]` → [Repo Link](#)
+**University Enrollment Prediction Classifier**  
+*Predicts freshmen admission acceptance using ML models with logistic regression baseline and gradient boosting classifier with hyperparameter tuning*  
+`[Python, Scikit-learn, ML, Hyperparameter Tuning]` → [Repo](https://github.com/ptimilsina1/university-enrollment-predictor)
 
-- **Real-time Data Lake Architecture**  
-  *Scalable ETL framework with Airflow orchestration*  
-  `[dbt, Snowflake, AWS]` → [Repo Link](#)
+**News Topic Modeling and Sentiment Analysis**  
+*Performs topic modeling (NMF, LDA Mallet) and sentiment analysis (VADER, TextBlob) on news articles with trend visualization*  
+`[NLP, Topic Modeling, Sentiment Analysis, Visualization]` → [Repo](https://github.com/ptimilsina1/news-topic-analysis)
+
+**Charlson Comorbidity Index (CCI) Classifier**  
+*NLP tool for calculating Charlson Comorbidity Index from clinical text using BioBERT for medical entity recognition and spaCy for negation detection*  
+`[NLP, BioBERT, spaCy, Medical Text Processing]` → [Repo](https://github.com/ptimilsina1/cci_classifier)
+
+**Medical Claims Cost Forecasting**  
+*Time series forecasting for medical claims using traditional models (SARIMA, ETS, Prophet) and neural networks (LSTM, GRU, hybrid)*  
+`[Time Series, LSTM, GRU, SARIMA, ETS, Prophet, Deep Learning]` → [Repo](https://github.com/ptimilsina1/claims_cost_forecast)
+
+**Airflow Celery Cluster on AWS EC2**  
+*CloudFormation template for Apache Airflow cluster on AWS EC2 with Celery workers, designed for cost-efficient ETL orchestration*  
+`[Apache Airflow, AWS, CloudFormation, Celery, ETL]` → [Repo](https://github.com/ptimilsina1/AWS-Airflow-Celery-Cluster)
+
+**University Student Network Analysis for COVID Spread Reduction**  
+*Analyzes student networks to model COVID-19 spread and evaluate intervention strategies*  
+`[Network Analysis, Python, Modeling, Simulation]` → [Repo](https://github.com/ptimilsina1/university-covid-network)
+
+**Career Copilot**  
+*Streamlit app generating resume points, cover letters, and interview questions from job descriptions and resumes using OpenAI's LLM*  
+`[Streamlit, OpenAI, LLM, PDF Generation]` → [Repo](https://github.com/ptimilsina1/CareerCopilot)
+
+**Multi-Pdf-Bot**  
+*Streamlit application for chatting with multiple PDF documents using conversational AI*  
+`[Streamlit, NLP, Document Processing, Conversational AI]` → [Repo](https://github.com/ptimilsina1/MultiPdfChat)
 
 ## 💼 Experience
 - **Data Scientist** @ Middle States Commission on Higher Education  
@@ -59,8 +79,5 @@ Experienced data professional with expertise in building end-to-end data solutio
 - **BS Physics, Computer Science, Math & Bio-statistics** - St. Xavier's College
 
 ---
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ptimilsina&show_icons=true&theme=vue-dark)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ptimilsina&layout=compact&theme=vue-dark)
 
 > "Turning data into decisions through science and engineering"
