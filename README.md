@@ -76,7 +76,7 @@ Experienced data professional with expertise in building end-to-end data solutio
   *Developing analytics frameworks for higher education accreditation*
   
 - **Senior Consultant - Data Engineer** @ Incapsulate LLC (Accenture)  
-  *Designed cloud data solutions for government clients*
+  *Architected cloud-based data solutions and financial costs forecast for government clients, specializing in medical classifiers, predictive modeling, and forecasting systems to enhance healthcare decision-making and operational efficiency for health clients*
   
 - **Data Scientist** @ Virginia Tech  
   *Built predictive models for institutional research*
