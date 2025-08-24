@@ -14,7 +14,7 @@ Experienced data professional with expertise in building end-to-end data solutio
 - **Data Scientist** @ Virginia Tech  
   *Built predictive models for institutional research*
 
-  ## 💡 Core Competencies
+## 💡 Core Competencies
 - **Data Engineering**: ETL/ELT pipelines, data warehousing (Snowflake, Redshift), workflow orchestration (Airflow)
 - **Data Science**: Statistical modeling, NLP, time series analysis, A/B testing
 - **Machine Learning**: Supervised/unsupervised learning, ensemble methods, model optimization
