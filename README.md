@@ -83,9 +83,10 @@ Experienced data professional with expertise in building end-to-end data solutio
 `[Streamlit, NLP, Document Processing, Conversational AI]` → [Repo](https://github.com/ptimilsina1/MultiPdfChat)
 
 ## 🎓 Education
-- **MS in Business Intelligence & Analytics** - Rockhurst University  
-- **MS Physics (Atomic Molecular Optics)** - Kansas State University  
-- **BS Physics, Computer Science, Math & Bio-statistics** - St. Xavier's College
+- **MS in Business Intelligence & Analytics** - Rockhurst University, Kansas City, MO  
+- **MS Physics (Atomic Molecular Optics)** - Kansas State University, Manhattan, KS
+- **MS Physics (Electronics Minor)** - St. Joseph's College, Trichy, India
+- **BS Physics, Computer Science, Math & Bio-statistics** - St. Xavier's College, Kathmandu, Nepal
 
 ---
 
