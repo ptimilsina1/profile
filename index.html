@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pratap Timilsina — Data Scientist & Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:    #0B1F3A;
+    --slate:   #1C3558;
+    --teal:    #0D9E8C;
+    --teal-lt: #12BDA8;
+    --gold:    #E6A817;
+    --fog:     #EEF2F7;
+    --white:   #FFFFFF;
+    --text:    #1A2B42;
+    --muted:   #5E7491;
+    --border:  #D4DDE8;
+
+    --serif: 'DM Serif Display', serif;
+    --sans:  'Inter', sans-serif;
+    --mono:  'JetBrains Mono', monospace;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--white);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(11,31,58,0.96);
+    backdrop-filter: blur(12px);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 48px; height: 62px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-brand {
+    font-family: var(--mono);
+    font-size: 14px; font-weight: 500;
+    color: var(--teal-lt);
+    letter-spacing: 0.04em;
+  }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-links a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 13px; font-weight: 500;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--teal-lt); }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    background: var(--navy);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 100px 80px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  #hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 70% 40%, rgba(13,158,140,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 50% at 20% 80%, rgba(230,168,23,0.08) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  /* grid overlay — signature element */
+  #hero::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+
+  .hero-content { position: relative; z-index: 1; }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: var(--mono); font-size: 12px; font-weight: 500;
+    color: var(--teal-lt); letter-spacing: 0.1em; text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: block; width: 32px; height: 1px;
+    background: var(--teal-lt);
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.05;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--teal-lt);
+  }
+  .hero-subtitle {
+    font-size: 16px; font-weight: 400;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 28px;
+    line-height: 1.5;
+    max-width: 440px;
+  }
+  .hero-ctas {
+    display: flex; flex-wrap: wrap; gap: 12px;
+    margin-bottom: 56px;
+  }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--teal);
+    color: var(--white);
+    padding: 13px 28px;
+    border-radius: 4px;
+    font-size: 14px; font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+    letter-spacing: 0.02em;
+  }
+  .btn-primary:hover { background: var(--teal-lt); transform: translateY(-1px); }
+  .btn-ghost {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: transparent;
+    color: rgba(255,255,255,0.7);
+    padding: 13px 28px;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.2);
+    font-size: 14px; font-weight: 500;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .btn-ghost:hover { border-color: var(--teal-lt); color: var(--teal-lt); }
+
+  .hero-stats {
+    display: flex; gap: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 28px;
+  }
+  .stat-num {
+    font-family: var(--serif);
+    font-size: 36px;
+    color: var(--white);
+    line-height: 1;
+  }
+  .stat-num span { color: var(--teal-lt); }
+  .stat-label {
+    font-size: 11px; font-weight: 500;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .hero-visual {
+    position: relative; z-index: 1;
+    display: flex; justify-content: center; align-items: center;
+  }
+  .avatar-ring {
+    position: relative;
+    width: 320px; height: 320px;
+  }
+  .avatar-ring::before {
+    content: '';
+    position: absolute; inset: -3px;
+    border-radius: 50%;
+    background: conic-gradient(var(--teal) 0deg, var(--gold) 120deg, transparent 240deg, var(--teal) 360deg);
+    animation: spin 12s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .avatar-ring img {
+    position: relative; z-index: 1;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--navy);
+  }
+  .avatar-badge {
+    position: absolute; bottom: 20px; right: -10px;
+    background: var(--navy);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--teal-lt);
+    white-space: nowrap;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  .avatar-badge strong { display: block; font-size: 14px; color: var(--white); margin-bottom: 2px; }
+
+  /* ── SECTIONS ── */
+  section { padding: 96px 80px; }
+  section:nth-child(odd) { background: var(--white); }
+  section:nth-child(even) { background: var(--fog); }
+
+  .section-label {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: var(--mono); font-size: 11px; font-weight: 500;
+    color: var(--teal); letter-spacing: 0.12em; text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .section-label::after {
+    content: '';
+    display: block; width: 48px; height: 1px;
+    background: var(--border);
+  }
+  h2 {
+    font-family: var(--serif);
+    font-size: clamp(32px, 3.5vw, 46px);
+    color: var(--navy);
+    line-height: 1.1;
+    margin-bottom: 48px;
+  }
+  h2 em { font-style: italic; color: var(--teal); }
+
+  /* ── EXPERIENCE ── */
+  .timeline { max-width: 760px; }
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 0 40px;
+    position: relative;
+    padding-bottom: 48px;
+  }
+  .timeline-item:last-child { padding-bottom: 0; }
+  .timeline-date {
+    font-family: var(--mono); font-size: 12px;
+    color: var(--muted); padding-top: 4px;
+    text-align: right; line-height: 1.4;
+  }
+  .timeline-body {
+    border-left: 1px solid var(--border);
+    padding-left: 32px;
+    position: relative;
+  }
+  .timeline-body::before {
+    content: '';
+    position: absolute; left: -5px; top: 6px;
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--teal);
+    box-shadow: 0 0 0 3px rgba(13,158,140,0.2);
+  }
+  .job-title {
+    font-size: 17px; font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 2px;
+  }
+  .job-company {
+    font-size: 14px; color: var(--teal);
+    font-weight: 500; margin-bottom: 10px;
+  }
+  .job-desc {
+    font-size: 14px; color: var(--muted);
+    line-height: 1.65;
+  }
+
+  /* ── SKILLS ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  .skill-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px;
+    transition: box-shadow 0.2s, border-color 0.2s, transform 0.15s;
+  }
+  .skill-card:hover {
+    box-shadow: 0 8px 32px rgba(11,31,58,0.10);
+    border-color: var(--teal);
+    transform: translateY(-2px);
+  }
+  .skill-icon {
+    font-size: 26px; margin-bottom: 14px;
+    display: block;
+  }
+  .skill-card h3 {
+    font-size: 15px; font-weight: 600;
+    color: var(--navy); margin-bottom: 10px;
+  }
+  .tags {
+    display: flex; flex-wrap: wrap; gap: 6px;
+  }
+  .tag {
+    font-family: var(--mono);
+    font-size: 11px; font-weight: 500;
+    color: var(--teal);
+    background: rgba(13,158,140,0.08);
+    border: 1px solid rgba(13,158,140,0.2);
+    border-radius: 4px;
+    padding: 3px 9px;
+  }
+  .tag.cloud {
+    color: #5B7BE3;
+    background: rgba(91,123,227,0.08);
+    border-color: rgba(91,123,227,0.2);
+  }
+  .tag.ml {
+    color: #C0741A;
+    background: rgba(192,116,26,0.08);
+    border-color: rgba(192,116,26,0.2);
+  }
+
+  /* ── PROJECTS ── */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+  }
+  .project-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px;
+    display: flex; flex-direction: column;
+    transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+  }
+  .project-card:hover {
+    box-shadow: 0 10px 40px rgba(11,31,58,0.12);
+    transform: translateY(-3px);
+    border-color: var(--teal);
+  }
+  .project-header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    margin-bottom: 12px;
+  }
+  .project-card h3 {
+    font-size: 15px; font-weight: 600;
+    color: var(--navy); line-height: 1.35;
+    flex: 1; padding-right: 12px;
+  }
+  .project-link {
+    color: var(--teal); font-size: 20px;
+    text-decoration: none; flex-shrink: 0;
+    transition: color 0.2s;
+    line-height: 1;
+  }
+  .project-link:hover { color: var(--teal-lt); }
+  .project-card p {
+    font-size: 13px; color: var(--muted);
+    line-height: 1.6; flex: 1; margin-bottom: 18px;
+  }
+
+  /* ── CERTS ── */
+  .certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .cert-card {
+    display: flex; align-items: center; gap: 16px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px 20px;
+    text-decoration: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .cert-card:hover {
+    border-color: var(--teal);
+    box-shadow: 0 4px 16px rgba(13,158,140,0.1);
+  }
+  .cert-badge {
+    width: 40px; height: 40px; flex-shrink: 0;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+  .cert-badge.azure  { background: rgba(0,114,198,0.1); }
+  .cert-badge.db     { background: rgba(255,59,0,0.1); }
+  .cert-badge.bi     { background: rgba(240,178,0,0.1); }
+  .cert-badge.airflow{ background: rgba(0,122,255,0.1); }
+  .cert-info { flex: 1; min-width: 0; }
+  .cert-name {
+    font-size: 13px; font-weight: 600;
+    color: var(--navy); line-height: 1.35;
+  }
+  .cert-issuer {
+    font-family: var(--mono); font-size: 11px;
+    color: var(--muted); margin-top: 3px;
+  }
+  .cert-arrow {
+    color: var(--border); font-size: 16px;
+    transition: color 0.2s, transform 0.2s;
+  }
+  .cert-card:hover .cert-arrow { color: var(--teal); transform: translateX(3px); }
+
+  /* ── EDUCATION ── */
+  .edu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+  }
+  .edu-card {
+    background: var(--fog);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 22px;
+  }
+  .edu-degree {
+    font-size: 14px; font-weight: 600;
+    color: var(--navy); margin-bottom: 4px;
+    line-height: 1.4;
+  }
+  .edu-school {
+    font-size: 13px; color: var(--teal);
+    font-weight: 500; margin-bottom: 4px;
+  }
+  .edu-location {
+    font-family: var(--mono); font-size: 11px;
+    color: var(--muted);
+  }
+
+  /* ── CONTACT ── */
+  #contact {
+    background: var(--navy);
+    text-align: center;
+    padding: 96px 48px;
+  }
+  #contact .section-label { color: rgba(255,255,255,0.4); }
+  #contact .section-label::after { background: rgba(255,255,255,0.15); }
+  #contact h2 { color: var(--white); margin-bottom: 16px; }
+  #contact h2 em { color: var(--teal-lt); }
+  #contact p { color: rgba(255,255,255,0.5); margin-bottom: 40px; max-width: 500px; margin-left: auto; margin-right: auto; font-size: 15px; }
+  .contact-links {
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 16px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #060F1E;
+    text-align: center;
+    padding: 24px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: rgba(255,255,255,0.2);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    #hero { grid-template-columns: 1fr; padding: 100px 32px 64px; }
+    .hero-visual { display: none; }
+    section { padding: 64px 32px; }
+    nav { padding: 0 24px; }
+    .nav-links { gap: 20px; }
+    .timeline-item { grid-template-columns: 1fr; }
+    .timeline-date { text-align: left; padding-bottom: 6px; }
+    .timeline-body { padding-left: 20px; }
+  }
+  @media (max-width: 600px) {
+    .nav-links { display: none; }
+    h1 { font-size: 38px; }
+    .hero-stats { gap: 24px; }
+    .stat-num { font-size: 28px; }
+    section { padding: 56px 20px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .avatar-ring::before { animation: none; }
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-brand">ptimilsina</span>
+  <ul class="nav-links">
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Data Scientist & Engineer</div>
+    <h1>Pratap<br><em>Timilsina</em></h1>
+    <p class="hero-subtitle">Building end-to-end data solutions — from cloud pipelines to LLM systems — that turn complex data into clear decisions.</p>
+    <div class="hero-ctas">
+      <a href="mailto:ptimilsina.data@gmail.com" class="btn-primary">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+        Get in Touch
+      </a>
+      <a href="https://www.linkedin.com/in/ptimilsina/" target="_blank" class="btn-ghost">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/ptimilsina1" target="_blank" class="btn-ghost">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        GitHub
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">7<span>+</span></div>
+        <div class="stat-label">Years of Experience</div>
+      </div>
+      <div>
+        <div class="stat-num">6<span>+</span></div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div>
+        <div class="stat-num">8<span>+</span></div>
+        <div class="stat-label">Featured Projects</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="avatar-ring">
+      <img src="me.png" alt="Pratap Timilsina" onerror="this.style.background='#1C3558';this.style.display='flex'">
+      <div class="avatar-badge">
+        <strong>Open to Opportunities</strong>
+        Data Sci · Data Eng · ML
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label">Career</div>
+  <h2>Professional<br><em>Experience</em></h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-date">Present</div>
+      <div class="timeline-body">
+        <div class="job-title">Data Analyst / Data Scientist</div>
+        <div class="job-company">Middle States Commission on Higher Education</div>
+        <div class="job-desc">Developing analytics frameworks and predictive models to support higher education accreditation decisions and institutional research at scale.</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Prior</div>
+      <div class="timeline-body">
+        <div class="job-title">Senior Consultant — Data Engineer</div>
+        <div class="job-company">Incapsulate LLC (Accenture)</div>
+        <div class="job-desc">Architected cloud-based data solutions and financial cost forecasting models for a government client, delivering scalable ETL pipelines on AWS and Azure.</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Prior</div>
+      <div class="timeline-body">
+        <div class="job-title">Data Scientist</div>
+        <div class="job-company">Virginia Tech</div>
+        <div class="job-desc">Built predictive models for institutional research, supporting data-driven decision-making across enrollment and resource planning.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">Expertise</div>
+  <h2>Core<br><em>Competencies</em></h2>
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <span class="skill-icon">⚙️</span>
+      <h3>Data Engineering</h3>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">PySpark</span><span class="tag">SQL</span>
+        <span class="tag">Apache Airflow</span><span class="tag">dbt</span>
+        <span class="tag">Snowflake</span><span class="tag">Redshift</span>
+        <span class="tag">ETL / ELT</span><span class="tag">Docker</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-icon">🤖</span>
+      <h3>Machine Learning & Deep Learning</h3>
+      <div class="tags">
+        <span class="tag ml">Scikit-learn</span><span class="tag ml">XGBoost</span>
+        <span class="tag ml">PyTorch</span><span class="tag ml">TensorFlow</span>
+        <span class="tag ml">LSTM / GRU</span><span class="tag ml">Transformers</span>
+        <span class="tag ml">SARIMA</span><span class="tag ml">A/B Testing</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-icon">🧠</span>
+      <h3>LLM Stack</h3>
+      <div class="tags">
+        <span class="tag">LangChain</span><span class="tag">CrewAI</span>
+        <span class="tag">RAG</span><span class="tag">Vector DBs</span>
+        <span class="tag">Prompt Engineering</span><span class="tag">OpenAI</span>
+        <span class="tag">BioBERT</span><span class="tag">spaCy</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-icon">☁️</span>
+      <h3>Cloud Architecture</h3>
+      <div class="tags">
+        <span class="tag cloud">AWS SageMaker</span><span class="tag cloud">AWS Glue</span>
+        <span class="tag cloud">AWS Athena</span><span class="tag cloud">EMR</span>
+        <span class="tag cloud">Azure ML</span><span class="tag cloud">Azure Synapse</span>
+        <span class="tag cloud">Databricks</span><span class="tag cloud">CloudFormation</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-icon">📊</span>
+      <h3>Analytics & Visualization</h3>
+      <div class="tags">
+        <span class="tag">Power BI</span><span class="tag">Tableau</span>
+        <span class="tag">Google Analytics</span><span class="tag">Dash</span>
+        <span class="tag">NLP / Topic Modeling</span><span class="tag">Bayesian</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-icon">🗄️</span>
+      <h3>Databases & Big Data</h3>
+      <div class="tags">
+        <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span>
+        <span class="tag">Oracle</span><span class="tag">Hadoop</span>
+        <span class="tag">Spark</span><span class="tag">HBase</span>
+        <span class="tag">Hive</span><span class="tag">Salesforce / SOQL</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">Work</div>
+  <h2>Featured<br><em>Projects</em></h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="project-header">
+        <h3>University Enrollment Prediction Classifier</h3>
+        <a href="https://github.com/ptimilsina1/university-enrollment-predictor" target="_blank" class="project-link">↗</a>
+      </div>
+      <p>Predicts freshman admission acceptance using logistic regression baseline and gradient boosting with hyperparameter tuning.</p>
+      <div class="tags"><span class="tag ml">Python</span><span class="tag ml">Scikit-learn</span><span class="tag ml">Gradient Boosting</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Medical Claims Cost Forecasting</h3>
+        <a href="https://github.com/ptimilsina1/claims_cost_forecast" target="_blank" class="project-link">↗</a>
+      </div>
+      <p>Time series forecasting for medical claims using SARIMA, ETS, Prophet, and hybrid neural networks (LSTM + GRU).</p>
+      <div class="tags"><span class="tag ml">LSTM</span><span class="tag ml">Prophet</span><span class="tag ml">SARIMA</span><span class="tag ml">Deep Learning</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Charlson Comorbidity Index (CCI) Classifier</h3>
+        <a href="https://github.com/ptimilsina1/cci_classifier" target="_blank" class="project-link">↗</a>
+      </div>
+      <p>NLP tool using BioBERT for medical entity recognition and spaCy for negation detection to compute CCI from clinical text.</p>
+      <div class="tags"><span class="tag">BioBERT</span><span class="tag">spaCy</span><span class="tag">NLP</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Career Copilot</h3>
+        <a href="https://github.com/ptimilsina1/CareerCopilot" target="_blank" class="project-link">↗</a>
+      </div>
+      <p>Streamlit app generating tailored resume bullets, cover letters, and interview questions from job descriptions using LLMs.</p>
+      <div class="tags"><span class="tag">Streamlit</span><span class="tag">OpenAI</span><span class="tag">LLM</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Airflow Celery Cluster on AWS EC2</h3>
+        <a href="https://github.com/ptimilsina1/AWS-Airflow-Celery-Cluster" target="_blank" class="project-link">↗</a>
+      </div>
+      <p>CloudFormation template for a cost-efficient Apache Airflow cluster with Celery workers for ETL orchestration on EC2.</p>
+      <div class="tags"><span class="tag cloud">AWS</span><span class="tag cloud">CloudFormation</span><span class="tag">Airflow</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h3>News Topic Modeling & Sentiment Analysis</h3>
+        <a href="https://github.com/ptimilsina1/news-topic-analysis" target="_blank" class="project-link">↗</a>
+      </div>
+      <p>Combines NMF and LDA Mallet topic modeling with VADER and TextBlob sentiment analysis for news trend visualization.</p>
+      <div class="tags"><span class="tag">NLP</span><span class="tag">LDA</span><span class="tag">VADER</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Multi-PDF Chatbot</h3>
+        <a href="https://github.com/ptimilsina1/MultiPdfChat" target="_blank" class="project-link">↗</a>
+      </div>
+      <p>Streamlit app for conversational Q&A across multiple PDF documents using retrieval-augmented generation.</p>
+      <div class="tags"><span class="tag">RAG</span><span class="tag">Streamlit</span><span class="tag">LLM</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Student Network Analysis for COVID Spread</h3>
+        <a href="https://github.com/ptimilsina1/university-covid-network" target="_blank" class="project-link">↗</a>
+      </div>
+      <p>Graph-based model of student interaction networks to simulate COVID-19 spread and evaluate intervention strategies.</p>
+      <div class="tags"><span class="tag ml">Network Analysis</span><span class="tag ml">Simulation</span><span class="tag">Python</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-label">Credentials</div>
+  <h2>Certifications<br><em>& Badges</em></h2>
+  <div class="certs-grid">
+
+    <a href="https://learn.microsoft.com/en-us/users/prataptimilsina-0218/credentials/2557138e8c2ec53a" target="_blank" class="cert-card">
+      <div class="cert-badge azure">🧬</div>
+      <div class="cert-info">
+        <div class="cert-name">Azure Data Scientist Associate</div>
+        <div class="cert-issuer">Microsoft</div>
+      </div>
+      <div class="cert-arrow">→</div>
+    </a>
+
+    <a href="https://credentials.databricks.com/2fd2bc26-c5d9-4b4f-878a-1ada3b7b0196" target="_blank" class="cert-card">
+      <div class="cert-badge db">🔶</div>
+      <div class="cert-info">
+        <div class="cert-name">Databricks Certified Data Engineer Associate</div>
+        <div class="cert-issuer">Databricks</div>
+      </div>
+      <div class="cert-arrow">→</div>
+    </a>
+
+    <a href="https://learn.microsoft.com/en-us/users/prataptimilsina-0218/credentials/35d1269c14ca3920" target="_blank" class="cert-card">
+      <div class="cert-badge bi">📊</div>
+      <div class="cert-info">
+        <div class="cert-name">Power BI Data Analyst Associate</div>
+        <div class="cert-issuer">Microsoft</div>
+      </div>
+      <div class="cert-arrow">→</div>
+    </a>
+
+    <a href="https://www.credly.com/badges/79c2ff29-de12-4ff5-b9f8-0e5f1568bad1/public_url" target="_blank" class="cert-card">
+      <div class="cert-badge airflow">🌀</div>
+      <div class="cert-info">
+        <div class="cert-name">Apache Airflow Fundamentals</div>
+        <div class="cert-issuer">Astronomer</div>
+      </div>
+      <div class="cert-arrow">→</div>
+    </a>
+
+    <a href="https://learn.microsoft.com/api/credentials/share/en-us/PratapTimilsina-0218/A34B35E9DCFC31F9?sharingId=C8CD1F0B985D1F8D" target="_blank" class="cert-card">
+      <div class="cert-badge azure">☁️</div>
+      <div class="cert-info">
+        <div class="cert-name">Azure Data Fundamentals</div>
+        <div class="cert-issuer">Microsoft</div>
+      </div>
+      <div class="cert-arrow">→</div>
+    </a>
+
+    <a href="https://learn.microsoft.com/api/credentials/share/en-us/PratapTimilsina-0218/544376AD51AE3298?sharingId=C8CD1F0B985D1F8D" target="_blank" class="cert-card">
+      <div class="cert-badge azure">🤖</div>
+      <div class="cert-info">
+        <div class="cert-name">Azure AI Fundamentals</div>
+        <div class="cert-issuer">Microsoft</div>
+      </div>
+      <div class="cert-arrow">→</div>
+    </a>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-label">Background</div>
+  <h2>Academic<br><em>Foundation</em></h2>
+  <div class="edu-list">
+    <div class="edu-card">
+      <div class="edu-degree">MS in Business Intelligence & Analytics</div>
+      <div class="edu-school">Rockhurst University</div>
+      <div class="edu-location">Kansas City, MO</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-degree">MS in Physics — Atomic Molecular Optics</div>
+      <div class="edu-school">Kansas State University</div>
+      <div class="edu-location">Manhattan, KS</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-degree">MS in Physics — Electronics Minor</div>
+      <div class="edu-school">St. Joseph's College</div>
+      <div class="edu-location">Trichy, India</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-degree">BS in Physics, CS, Math & Biostatistics</div>
+      <div class="edu-school">St. Xavier's College</div>
+      <div class="edu-location">Kathmandu, Nepal</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">Let's Connect</div>
+  <h2>Ready to build<br><em>something great?</em></h2>
+  <p>I'm open to data science, ML engineering, and data engineering roles. Let's talk.</p>
+  <div class="contact-links">
+    <a href="mailto:ptimilsina.data@gmail.com" class="btn-primary">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+      ptimilsina.data@gmail.com
+    </a>
+    <a href="https://www.linkedin.com/in/ptimilsina/" target="_blank" class="btn-ghost" style="color:rgba(255,255,255,0.6); border-color:rgba(255,255,255,0.2);">
+      LinkedIn Profile
+    </a>
+    <a href="https://github.com/ptimilsina1" target="_blank" class="btn-ghost" style="color:rgba(255,255,255,0.6); border-color:rgba(255,255,255,0.2);">
+      GitHub Portfolio
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Pratap Timilsina · Built with care · Turning data into decisions
+</footer>
+
+</body>
+</html>
